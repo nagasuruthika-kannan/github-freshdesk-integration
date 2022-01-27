@@ -13,12 +13,7 @@ Simple integration between Freshdesk Github. The app performs the following func
 
 ## Screenshots
 
-<img src="./screenshots/ticket-sidebar.png" width="300">
-<p float="left">
-  <img src="./screenshots/create-card.jpeg" width="400" />
-  <img src="./screenshots/view-card.jpeg" width="400" /> 
-</p>
-<img src="./screenshots/app-preview.png">
+
 
 ***
 
