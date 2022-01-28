@@ -1,0 +1,11 @@
+{
+  "account_id": 12345,
+  "event": "onExternalEvent",
+  "timestamp": 1500351361762,
+  "domain": "new-sample.freshdesk.com",
+  "options": "freshdesk.onExternalEvent",
+  "data": "{ \"action\": \"closed\", \"issue\": { \"id\": 492072064, \"number\": 94, \"body\": \"a new issue created for a bug\", \"title\": \"not a bug issue\"  } }",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}

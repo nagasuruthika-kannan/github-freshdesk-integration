@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="./assets/iparams.css" />
+  </head>
+  <body>
+    <main>
+      <h3>
+        Installation Page
+      </h3>
+
+      <fw-input
+      label="Freshdesk API Key"
+      icon-right="magic-wand"
+      placeholder="Freshdesk Portal > Profile > Copy API Key"
+      required="true"
+      minlength="5"
+      size="30"
+      class="text-field"
+      ></fw-input>
+
+      <fw-input
+      label="Email of ticket creator"
+      icon-right="contact"
+      placeholder="sample@mail.com"
+      autocomplete="on"
+      maxlength="25"
+      class="text-field-3"
+      ></fw-input>
+      
+      <div>
+      <label for="repo">Repository to integrate </label>
+        <select
+   
+        id="selectoption"
+        autocomplete="on"
+        maxlength="50"
+        class="text-field-2">
+        <option value="" disabled selected>Select Repo</option>
+       
+        </select>
+      </div>  
+     
+    </main>
+
+    <script src="./assets/iparams.js"></script>
+    <script>
+      let github_repo_name_Field = document.querySelector('.text-field-2');
+      let freshdesk_api_key_Field = document.querySelector('.text-field');
+      let ticket_email_Field= document.querySelector('.text-field-3')
+      function postConfigs() {
+        return {
+          
+          freshdesk_api_key: freshdesk_api_key_Field.value,
+          github_repo_name: github_repo_name_Field.value,
+          ticket_email: ticket_email_Field.value
+      
+        };
+      }
+
+      function getConfigs(configs) {
+        let { repo, hotsname } = configs;
+        ticket_email_Field.value=  ticket_email,
+        freshdesk_api_key_Field.value= freshdesk_api_key,
+        github_repo_name_Field.value = github_repo_name;
+        return;
+      }
+   
+     
+    
+
+/*
+      $.ajax({
+        url: "https://api.github.com/users/nagasuruthika-kannan/repos",
+        jsonp: true,
+        method: "GET",
+        dataType: "json",
+        headers: {
+          Authorization: "token <%= access_token %>"
+        },
+        isOAuth: true,
+        success: function(res) {
+        //console.log(res)
+        var data=[res];
+        var options = '';
+        for(var i=0; i<data.length;i++){
+          for (var index = 0; index < data[i].length; index++) {
+            console.log(data[i][index].full_name)
+            //console.log(typeof(data[i][index].full_name))
+            $('#selectoption').append('<option value="' + data[i][index].name + '">' + data[i][index].full_name + '</option>');
+   }}
+
+  }
+  
+}); */
+
+
+
+
+        //const octokit = new Octokit({ auth: `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` });
+        </script>
+        
+
+    <script type="module" src="https://unpkg.com/@freshworks/crayons/dist/crayons/crayons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/@freshworks/crayons/dist/crayons/crayons.js"></script>
+  </body>
+</html>

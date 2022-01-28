@@ -1,0 +1,44 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshdesk": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "styles/images/db.png"
+        },
+        "ticket_top_navigation": {
+          "url": "views/template.html",
+          "icon": "styles/images/icon.png"
+        }
+
+      },
+      "events": {
+        "onTicketCreate": {
+          "handler": "onTicketCreateHandler"
+        },
+        "onAppInstall": {
+          "handler": "onInstallHandler"
+        },
+        "onAppUninstall": {
+          "handler": "onUnInstallHandler"
+        },
+        "onExternalEvent": {
+          "handler": "onExternalEventHandler"
+        },
+        "onTicketUpdate": {
+          "handler": "onTicketUpdateHandler"
+        }
+      }
+      
+    }
+  },
+  "whitelisted-domains": [
+    "https://*.github.com",
+    "https://*.freshdesk.com"
+  ],
+  "engines": {
+    "node": "12.22.7",
+    "fdk": "7.1.2"
+  }
+}

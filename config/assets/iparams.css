@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 3rem;
+  row-gap: 1rem;
+  justify-items: stretch;
+  align-items: center;
+}
+
+h3 {
+  grid-area: 1 / 1 / 1 / 4;
+}
+label {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(71, 88, 103);
+  font-weight: 500;
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  display: block;
+  grid-row: auto;
+  grid-column: 1 / 2;
+}
+
+.text-field {
+  font-size: 14px;
+  color: rgb(71, 88, 103);
+  font-weight: 500;
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  display: block;
+  grid-row: auto;
+  grid-column: 1 / 2;
+}
+
+label {
+  font-size: 12px;
+  font-family: system-ui;
+  color: rgb(71, 88, 103);
+  font-weight: 500;
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  display: block;
+  display: block;
+  visibility: visible;
+  grid-row: auto;
+  grid-column: 1 / 2;
+}
