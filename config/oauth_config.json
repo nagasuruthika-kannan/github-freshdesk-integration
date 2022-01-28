@@ -1,6 +1,6 @@
 {
-  "client_id": "fda6251b6639dfddbd5b",
-  "client_secret": "43d24e4bff1fe2f392c68c870145369163e2d057",
+  "client_id": "",
+  "client_secret": "",
   "authorize_url": "https://github.com/login/oauth/authorize",
   "token_url": "https://github.com/login/oauth/access_token",
   "token_type": "account",
