@@ -12,10 +12,13 @@ Simple integration between Freshdesk Github. The app performs the following func
 ***
 
 ## Screenshots
+### ticket_top_navigation to github issue
 <img src="./screenshots/Screenshot1.png">
-<img src="./screenshots/Screenshot2" width="300">
+
+### table (full page app)
+<img src="./screenshots/Screenshot2.png" >
 <p float="left">
-  <img src="./screenshots/Screenshot3.png" width="400" />
+  <img src="./screenshots/Screenshot3.png" />
 </p>
 
 
