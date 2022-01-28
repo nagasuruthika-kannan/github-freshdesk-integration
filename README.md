@@ -12,10 +12,10 @@ Simple integration between Freshdesk Github. The app performs the following func
 ***
 
 ## Screenshots
-<img src="./screenshots/screenshot1.png">
-<img src="./screenshots/screenshot2" width="300">
+<img src="./screenshots/Screenshot1.png">
+<img src="./screenshots/Screenshot2" width="300">
 <p float="left">
-  <img src="./screenshots/screenshot3.png" width="400" />
+  <img src="./screenshots/Screenshot3.png" width="400" />
 </p>
 
 
