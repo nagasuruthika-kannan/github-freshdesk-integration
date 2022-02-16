@@ -1,7 +1,10 @@
+//retrieve IssueNumber for a given ticketID
 function lookupIssueNumber(ticketID) {
   var dbKey = String(`fdTicket:${ticketID}`).substring(0, 30);
   return $db.get(dbKey);
 }
+
+//retrieve ticektID for a given IssueNumber
 function lookupTicketId(issueNumber) {
   var dbKey = String(`gitIssue:${issueNumber}`).substring(0, 30);
   return $db.get(dbKey);
@@ -21,6 +24,11 @@ function updateData(data) {
     });
 }
 
+/**
+ * Store Github issue data using data storage API
+ * @param {array} data Issue array to be set in data storage
+ */
+
 function setData(data) {
   var dbKey = String(`fdTicket:${data.ticketID}`).substring(0, 30);
   var dbKey2 = String(`gitIssue:${data.issueNumber}`).substring(0, 30);
@@ -31,8 +39,7 @@ function setData(data) {
   ])
     .then(function () {
       console.log(
-        "Success",
-        "A Github issue is successfully created for this ticket"
+        "Success"
       );
     })
     .catch(function (error) {
@@ -204,9 +211,9 @@ exports = {
     );
   },
   /**
-   * Handler for onTicketCreate event
+   * Handler for onTicketUpdate event
    *
-   * Updates an issue in github when a ticket is modified aka. closed in freshdesk
+   * Updates/closes an issue in github when a ticket is modified/closed in freshdesk
    *
    * @param {object} args - payload
    */
