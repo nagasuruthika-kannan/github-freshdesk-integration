@@ -9,18 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     client.events.on("app.activated", function () {
       client.db.get("github-app-key-new").then(function (data) {
-        // var elem = document.getElementById('table');
-
-        // FETCHING DATA FROM JSON FILE
 
         var obj = "";
-
-        // ITERATING THROUGH OBJECTS
+   
+ 	//construction of columns
         obj += "<th>" + "Tickets" + "</th>";
         obj += "<th>" + "Issues" + "</th>";
 
-        //CONSTRUCTION OF ROWS HAVING
-        // DATA FROM JSON OBJECT
+      	//construction of rows
         obj += "<tr>";
         obj += "<td>" + data["ticket"] + "</td>";
 
