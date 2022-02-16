@@ -29,12 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
         obj += "</tr>";
         document.getElementById("table").innerHTML = obj; //INSERTING ROWS INTO TABLE
 
-        //console.log(typeof(data))
-
-        //console.log('0 here:',data.linked_data);
-        //console.log('1 here',result[1]);
-        //var obj= data.linked_data
-        //console.log('0 here:',data.linked_data['0']['ticket']);
 
         //debugger;
       });
