@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 url = `https://github.com/${iparam.github_repo_name}/issues/${data.issue_data.issueNumber}`;
 
                 issue_url = String(url);
-                window.open(url);
+                window.open(url); // navigation to github issue page
               });
             },
             function (error) {
@@ -30,6 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/**
+ * Retrieve the issue from data storage
+ * @param {Number} ticketID Ticket ID
+ */
+
 function lookupIssue(ticketID) {
   var dbKey = String(`fdTicket:${ticketID}`).substring(0, 30);
   console.log(dbKey);
